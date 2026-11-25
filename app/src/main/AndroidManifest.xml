@@ -11,7 +11,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/Theme.Fundlink">
+=======
+        android:theme="@style/Theme.Fund_Link">
+>>>>>>> origin/main
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -24,4 +28,8 @@
         </activity>
     </application>
 
+<<<<<<< HEAD
 </manifest>
+=======
+</manifest>
+>>>>>>> origin/main

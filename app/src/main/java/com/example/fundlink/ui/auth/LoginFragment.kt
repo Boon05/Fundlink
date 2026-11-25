@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 package com.example.fundlink.ui.auth
 
@@ -121,3 +122,10 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         _binding = null
     }
 }
+=======
+package com.example.fundlink.ui.auth
+
+import androidx.fragment.app.Fragment
+
+class LoginFragment : Fragment()
+>>>>>>> origin/main

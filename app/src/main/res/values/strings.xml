@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Fundlink</string>
+=======
+    <string name="app_name">Fund_Link</string>
+>>>>>>> origin/main
 </resources>

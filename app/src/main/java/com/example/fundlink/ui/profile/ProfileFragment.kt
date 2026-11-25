@@ -1,5 +1,6 @@
 package com.example.fundlink.ui.profile
 
+<<<<<<< HEAD
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -57,3 +58,8 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         _binding = null
     }
 }
+=======
+import androidx.fragment.app.Fragment
+
+class ProfileFragment : Fragment()
+>>>>>>> origin/main

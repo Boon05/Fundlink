@@ -12,7 +12,11 @@ data class StudentApplication(
     val opportunityId: Long,
     val opportunityTitle: String,
     val requestedAmount: Double,
+<<<<<<< HEAD
     val statement: String = "",
+=======
+    val statement: String,
+>>>>>>> origin/main
     val status: String = "PENDING",
     val submittedAt: Long = System.currentTimeMillis(),
     val reviewedBy: Long = 0,

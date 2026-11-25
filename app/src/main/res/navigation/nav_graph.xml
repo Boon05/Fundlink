@@ -3,10 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
     app:startDestination="@id/loginFragment">
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
     <action android:id="@+id/action_global_loginFragment"
         app:destination="@id/loginFragment"
         app:popUpTo="@id/nav_graph"
         app:popUpToInclusive="true" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
     <fragment android:id="@+id/loginFragment"
         android:name="com.example.fundlink.ui.auth.LoginFragment"
         android:label="Login">
@@ -19,9 +27,17 @@
             app:destination="@id/officerDashboardFragment"
             app:popUpTo="@id/loginFragment" app:popUpToInclusive="true" />
     </fragment>
+<<<<<<< HEAD
     <fragment android:id="@+id/registerFragment"
         android:name="com.example.fundlink.ui.auth.RegisterFragment"
         android:label="Register" />
+=======
+
+    <fragment android:id="@+id/registerFragment"
+        android:name="com.example.fundlink.ui.auth.RegisterFragment"
+        android:label="Register" />
+
+>>>>>>> origin/main
     <fragment android:id="@+id/studentDashboardFragment"
         android:name="com.example.fundlink.ui.student.StudentDashboardFragment"
         android:label="Student dashboard">
@@ -32,18 +48,34 @@
         <action android:id="@+id/action_studentDashboardFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
     </fragment>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
     <fragment android:id="@+id/opportunitiesFragment"
         android:name="com.example.fundlink.ui.student.OpportunitiesFragment"
         android:label="Opportunities">
         <action android:id="@+id/action_opportunitiesFragment_to_opportunityDetailsFragment"
             app:destination="@id/opportunityDetailsFragment" />
     </fragment>
+<<<<<<< HEAD
     <fragment android:id="@+id/opportunityDetailsFragment"
         android:name="com.example.fundlink.ui.student.OpportunityDetailsFragment"
         android:label="Opportunity details" />
     <fragment android:id="@+id/myApplicationsFragment"
         android:name="com.example.fundlink.ui.student.MyApplicationsFragment"
         android:label="My applications" />
+=======
+
+    <fragment android:id="@+id/opportunityDetailsFragment"
+        android:name="com.example.fundlink.ui.student.OpportunityDetailsFragment"
+        android:label="Opportunity details" />
+
+    <fragment android:id="@+id/myApplicationsFragment"
+        android:name="com.example.fundlink.ui.student.MyApplicationsFragment"
+        android:label="My applications" />
+
+>>>>>>> origin/main
     <fragment android:id="@+id/officerDashboardFragment"
         android:name="com.example.fundlink.ui.officer.OfficerDashboardFragment"
         android:label="Officer dashboard">
@@ -52,6 +84,7 @@
         <action android:id="@+id/action_officerDashboardFragment_to_reviewApplicationsFragment"
             app:destination="@id/reviewApplicationsFragment" />
     </fragment>
+<<<<<<< HEAD
     <fragment android:id="@+id/manageOpportunitiesFragment"
         android:name="com.example.fundlink.ui.officer.ManageOpportunitiesFragment"
         android:label="Manage opportunities" />
@@ -61,4 +94,19 @@
     <fragment android:id="@+id/profileFragment"
         android:name="com.example.fundlink.ui.profile.ProfileFragment"
         android:label="Profile" />
+=======
+
+    <fragment android:id="@+id/manageOpportunitiesFragment"
+        android:name="com.example.fundlink.ui.officer.ManageOpportunitiesFragment"
+        android:label="Manage opportunities" />
+
+    <fragment android:id="@+id/reviewApplicationsFragment"
+        android:name="com.example.fundlink.ui.officer.ReviewApplicationsFragment"
+        android:label="Review applications" />
+
+    <fragment android:id="@+id/profileFragment"
+        android:name="com.example.fundlink.ui.profile.ProfileFragment"
+        android:label="Profile" />
+
+>>>>>>> origin/main
 </navigation>
