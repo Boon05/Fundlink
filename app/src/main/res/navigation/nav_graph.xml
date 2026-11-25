@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <action android:id="@+id/action_global_loginFragment"
+        app:destination="@id/loginFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+    <fragment android:id="@+id/loginFragment"
+        android:name="com.example.fundlink.ui.auth.LoginFragment"
+        android:label="Login">
+        <action android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action android:id="@+id/action_loginFragment_to_studentDashboardFragment"
+            app:destination="@id/studentDashboardFragment"
+            app:popUpTo="@id/loginFragment" app:popUpToInclusive="true" />
+        <action android:id="@+id/action_loginFragment_to_officerDashboardFragment"
+            app:destination="@id/officerDashboardFragment"
+            app:popUpTo="@id/loginFragment" app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment android:id="@+id/registerFragment"
+        android:name="com.example.fundlink.ui.auth.RegisterFragment"
+        android:label="Register" />
+
+    <fragment android:id="@+id/studentDashboardFragment"
+        android:name="com.example.fundlink.ui.student.StudentDashboardFragment"
+        android:label="Student dashboard">
+        <action android:id="@+id/action_studentDashboardFragment_to_opportunitiesFragment"
+            app:destination="@id/opportunitiesFragment" />
+        <action android:id="@+id/action_studentDashboardFragment_to_myApplicationsFragment"
+            app:destination="@id/myApplicationsFragment" />
+        <action android:id="@+id/action_studentDashboardFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/opportunitiesFragment"
+        android:name="com.example.fundlink.ui.student.OpportunitiesFragment"
+        android:label="Opportunities">
+        <action android:id="@+id/action_opportunitiesFragment_to_opportunityDetailsFragment"
+            app:destination="@id/opportunityDetailsFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/opportunityDetailsFragment"
+        android:name="com.example.fundlink.ui.student.OpportunityDetailsFragment"
+        android:label="Opportunity details" />
+
+    <fragment android:id="@+id/myApplicationsFragment"
+        android:name="com.example.fundlink.ui.student.MyApplicationsFragment"
+        android:label="My applications" />
+
+    <fragment android:id="@+id/officerDashboardFragment"
+        android:name="com.example.fundlink.ui.officer.OfficerDashboardFragment"
+        android:label="Officer dashboard">
+        <action android:id="@+id/action_officerDashboardFragment_to_manageOpportunitiesFragment"
+            app:destination="@id/manageOpportunitiesFragment" />
+        <action android:id="@+id/action_officerDashboardFragment_to_reviewApplicationsFragment"
+            app:destination="@id/reviewApplicationsFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/manageOpportunitiesFragment"
+        android:name="com.example.fundlink.ui.officer.ManageOpportunitiesFragment"
+        android:label="Manage opportunities" />
+
+    <fragment android:id="@+id/reviewApplicationsFragment"
+        android:name="com.example.fundlink.ui.officer.ReviewApplicationsFragment"
+        android:label="Review applications" />
+
+    <fragment android:id="@+id/profileFragment"
+        android:name="com.example.fundlink.ui.profile.ProfileFragment"
+        android:label="Profile" />
+
+</navigation>
