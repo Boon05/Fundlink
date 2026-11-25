@@ -1,5 +1,10 @@
 package com.example.fundlink.ui.student
 
+<<<<<<< HEAD
+import androidx.fragment.app.Fragment
+
+class OpportunityDetailsFragment : Fragment()
+=======
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -76,3 +81,4 @@ class OpportunityDetailsFragment : Fragment(R.layout.fragment_opportunity_detail
         _binding = null
     }
 }
+>>>>>>> origin/main

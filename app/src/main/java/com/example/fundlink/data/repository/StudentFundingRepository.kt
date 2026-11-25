@@ -1,5 +1,9 @@
 package com.example.fundlink.data.repository
 
+<<<<<<< HEAD
+class StudentFundingRepository {
+}
+=======
 import android.content.Context
 import com.example.fundlink.data.db.AppDatabase
 import com.example.fundlink.data.model.FundingOpportunity
@@ -47,3 +51,4 @@ class StudentFundingRepository(context: Context) {
         }
     }
 }
+>>>>>>> origin/main

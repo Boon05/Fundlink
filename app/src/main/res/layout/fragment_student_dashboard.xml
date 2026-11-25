@@ -1,4 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/dashboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to FundLink"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#202020"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/dashboardMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your student dashboard"
+        android:textSize="18sp"
+        android:textColor="#555555"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/opportunitiesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse Funding Opportunities"/>
+
+    <Button
+        android:id="@+id/applicationsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Applications"/>
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Profile"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"/>
+=======
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -48,5 +101,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Log out" />
+>>>>>>> origin/main
 
 </LinearLayout>

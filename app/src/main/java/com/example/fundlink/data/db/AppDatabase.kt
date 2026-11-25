@@ -19,6 +19,20 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun applicationDao(): ApplicationDao
 
     companion object {
+<<<<<<< HEAD
+        @Volatile
+        private var INSTANCE: AppDatabase? = null
+
+        fun getInstance(context: Context): AppDatabase {
+            return INSTANCE ?: synchronized(this) {
+                INSTANCE ?: Room.databaseBuilder(
+                    context.applicationContext,
+                    AppDatabase::class.java,
+                    "fundlink.db"
+                ).build().also { INSTANCE = it }
+            }
+        }
+=======
         @Volatile private var INSTANCE: AppDatabase? = null
         fun get(context: Context): AppDatabase =
             INSTANCE ?: synchronized(this) {
@@ -26,5 +40,6 @@ abstract class AppDatabase : RoomDatabase() {
                     context.applicationContext, AppDatabase::class.java, "fundlink.db"
                 ).build().also { INSTANCE = it }
             }
+>>>>>>> origin/main
     }
 }

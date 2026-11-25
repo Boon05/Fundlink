@@ -1,9 +1,17 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
+    <style name="Base.Theme.Fundlink" parent="Theme.Material3.DayNight.NoActionBar">
+=======
     <style name="Base.Theme.Fund_Link" parent="Theme.Material3.DayNight.NoActionBar">
+>>>>>>> origin/main
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+<<<<<<< HEAD
+    <style name="Theme.Fundlink" parent="Base.Theme.Fundlink" />
+=======
     <style name="Theme.Fund_Link" parent="Base.Theme.Fund_Link" />
+>>>>>>> origin/main
 </resources>
